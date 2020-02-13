@@ -29,7 +29,7 @@ a {
   background-color: #32425c;
 }
 
-.topmenu {
+.topMenu {
   background-color: #293449;
   color: #fff;
   font-size: 17px;
@@ -38,7 +38,11 @@ a {
   /* vertical-align: baseline; */
 }
 
-.toplogo {
+.topMenu:hover {
+  background-color: #293449;
+}
+
+.topLogo {
   padding: 13px 56px 15px 55px;
   background-color: #ee3643;
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
@@ -46,8 +50,28 @@ a {
   float: left;
 }
 
+.topLogo:hover {
+  background-color: #ca2c37;
+}
+
+.topLogo:active {
+  background-color: #ba2732;
+}
+
 .search {
   display: inline-block;
+}
+
+.search:hover {
+  background-color: #212a3a;
+}
+
+.search input:focus {
+  background-color: #ffffff;
+}
+
+.search input:focus ~ .checkout {
+  background-color: #ee3643;
 }
 
 .search input {
@@ -59,8 +83,24 @@ a {
   display: inline-block;
 }
 
+.bookmarks:hover {
+  background-color: #212a3a;
+}
+
+.bookmarks:active {
+  background-color: #161d29;
+}
+
 .cart {
   display: inline-block;
+}
+
+.cart:hover {
+  background-color: #212a3a;
+}
+
+.cart:active {
+  background-color: #161d29;
 }
 
 .checkout {
@@ -69,11 +109,19 @@ a {
   display: inline-block;
 }
 
-.dialogmap {
+.checkout:hover {
+  background-color: #5fbb2d;
+}
+
+.checkout:active {
+  background-color: #518534;
+}
+
+.dialogMap {
   display: none;
 }
 
-.dialogfeedback {
+.dialogFeedback {
   display: none;
 }
 
@@ -85,12 +133,12 @@ a {
   display: inline-block;
 }
 
-.contactstop {
+.contactsTop {
   display: inline-block;
   border: solid 2px #fff;
 }
 
-.phonetop {
+.phonetTop {
   font-size: 21px;
   color: #ee3643;
   border: solid 2px #fff;
@@ -98,22 +146,13 @@ a {
   display: inline-block;
 }
 
-.addrtop {
+.addrTop {
   margin-top: 10px;
   font-size: 14px;
   display: inline-block;
 }
 
-.signin {
-  font-size: 21px;
-  color: #000;
-  border: none;
-  background-color: #fff;
-  padding: 14px 25px 11px;
-  /* vertical-align: middle; */
-}
-
-.signup {
+.signIn {
   font-size: 21px;
   color: #000;
   border: none;
@@ -121,47 +160,82 @@ a {
   padding: 14px 25px 11px;
 }
 
-.navtop {
+.signIn:hover {
+  color: #ee3643;
+}
+
+.signIn:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.signUp {
+  font-size: 21px;
+  color: #000;
+  border: none;
+  background-color: #fff;
+  padding: 14px 25px 11px;
+}
+
+.signUp:hover {
+  color: #ee3643;
+}
+
+.signUp:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.navTop {
   background-color: #32425c;
   font-size: 17px;
+  box-shadow: inset 0px -5px 0 0 #293449;
 }
 
-.navtop ul {
+.navTop ul {
   list-style: none;
 }
 
-.navtop li {
-  display: inline;
+.navTop li {
+  display: inline-block;
+  padding: 22px 31px 26px 31px;
 }
 
-.aboutsection {
+.navTop li:hover {
+  background-color: #1d2739;
+}
+
+.navTop a:active {
+  background-color: #1d2739;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.aboutSection {
   font-size: 13px;
 }
 
-.aboutsection h2 {
+.aboutSection h2 {
   text-transform: uppercase;
   font-size: 30px;
 }
 
-.aboutsection ul {
+.aboutSection ul {
   list-style: none;
 }
 
-.aboutsection li {
+.aboutSection li {
   font-size: 18px;
   padding-top: 24px;
 }
 
-.contactssection {
+.contactsSection {
   font-size: 13px;
 }
 
-.contactssection h2 {
+.contactsSection h2 {
   text-transform: uppercase;
   font-size: 30px;
 }
 
-.aboutdetail {
+.aboutDetail {
   background-color: #ee3643;
   font-size: 14px;
   line-height: 18px;
@@ -171,11 +245,11 @@ a {
   margin-top: 24px;
 }
 
-.bottommap {
+.bottomMap {
   border: none;
 }
 
-.btnfeedback {
+.btnFeedback {
   background-color: #ee3643;
   color: #fff;
   font-size: 14px;
@@ -187,14 +261,14 @@ a {
   border: none;
 }
 
-.bottomlogo {
+.bottomLogo {
   background-color: #ee3643;
   padding: 20px 41px 25px;
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
   float: left;
 }
 
-.contactsbottom {
+.contactsBottom {
   font-size: 18px;
   line-height: 24px;
   color: #fff;
@@ -210,19 +284,35 @@ a {
   list-style: none;
 }
 
-.menubottom1 {
+.menuBottom1 {
   display: inline-block;
 }
 
-.menubottom2 {
+.menuBottom1 a:hover {
+  text-decoration: underline;
+}
+
+.menuBottom1 a:active {
+  color: rgba(241, 245, 247, 0.5);
+}
+
+.menuBottom2 {
   display: inline-block;
 }
 
-.menubottom2 a {
+.menuBottom2 a {
   color: #ffd180;
 }
 
-.footerbottom {
+.menuBottom2 a:hover {
+  text-decoration: underline;
+}
+
+.menuBottom2 a:active {
+  color: rgba(255, 209, 128, 0.5);
+}
+
+.footerBottom {
   background-color: #293449;
   font-size: 16px;
 }
@@ -234,17 +324,35 @@ a {
   display: inline-block;
 }
 
-.contactsocial {
+.contactSocial {
   display: inline-block;
+  background-color: #212a3a;
 }
 
-.contactsfeedback {
+.contactSocial a:hover {
+  background-color: #ee3643;
+}
+
+.contactSocial a:active {
+  background-color: #ee3643;
+}
+
+.contactsFeedback {
   display: inline-block;
   color: #fff;
 }
 
-.contactsfeedback span {
+.contactsFeedback span {
   color: #ffd180;
+}
+
+.contactsFeedback span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.contactsFeedback span:active {
+  color: #ee3643;
 }
 
 .designed {
@@ -256,6 +364,14 @@ a {
   color: #ffd180;
 }
 
+.designed a:hover {
+  text-decoration: underline;
+}
+
+.designed a:active {
+  color: #ee3643;
+}
+
 .logout {
   font-size: 21px;
   color: #000;
@@ -264,9 +380,25 @@ a {
   padding: 14px 25px 11px;
 }
 
-.afterloginmenu a {
+.logout:hover {
+  cursor: pointer;
+}
+
+.logout:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.afterloginMenu a {
   color: #32425c;
   text-decoration: underline;
+}
+
+.afterloginMenu a:hover {
+  color: #ee3643;
+}
+
+.afterloginMenu a:active {
+  color: rgba(50, 66, 92, 0.3);
 }
 
 .dot {
@@ -292,7 +424,7 @@ a {
   color: #000;
 }
 
-.producttypeheader {
+.productTypeHeader {
   font-size: 30px;
   text-decoration: uppercase;
   padding: 32px 30px 34px;
@@ -300,15 +432,15 @@ a {
   color: #32425c;
 }
 
-.dialognextactions {
+.dialogNextActions {
   display: none;
 }
 
-.productlist {
+.productList {
   list-style: none;
 }
 
-.productitem {
+.productItem {
   display: inline-block;
   border: solid 1px #e5e5e5;
   text-align: center;
@@ -317,22 +449,27 @@ a {
   height: 318px;
 }
 
-.productitem-caption {
+.productItem:hover {
+  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+.productItem-caption {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 18px;
   text-align: center;
 }
 
-.productitem-discount {
+.productItem-discount {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 17px;
   text-align: center;
+  text-decoration: line-through;
   color: #999;
 }
 
-.productitem-price {
+.productItem-price {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 17px;
@@ -346,7 +483,7 @@ a {
   display: inline-block;
 }
 
-.productitem-buy {
+.productItem-buy {
   font-size: 14px;
   text-transform: uppercase;
   padding: 14px 45px;
@@ -357,7 +494,16 @@ a {
   margin-top: 44px;
 }
 
-.productitem-tobookmark {
+.productItem-buy:hover {
+  background-color: #5fbb2d;
+}
+
+.productItem-buy:active {
+  background-color: #518534;
+  box-shadow: none;
+}
+
+.productItem-toBookmark {
   font-size: 14px;
   text-transform: uppercase;
   padding: 14px 32px 12px 36px;
@@ -367,6 +513,15 @@ a {
   display: inline-block;
   margin-top: 44px;
   color: #32425c;
+}
+
+.productItem-toBookmark:hover {
+  border: solid 3px #32425c;
+}
+
+.productItem-toBookmark:active {
+  border: solid 3px rgba(50, 66, 92, 0.3);
+  color: rgba(50, 66, 92, 0.3);
 }
 
 .filtr {
