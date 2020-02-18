@@ -263,6 +263,10 @@ a {
   color: rgba(255, 255, 255, 0.5);
 }
 
+.index-main {
+  display: flex;
+}
+
 .aboutSection {
   font-size: 13px;
   width: 520px;
